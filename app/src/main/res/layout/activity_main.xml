@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/nom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="102dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="30dp"
+        android:ems="10"
+        android:hint="nom"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/MotDePasse"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/MotDePasse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="509dp"
+        android:ems="10"
+        android:hint="mot de passe"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nom" />
+
+    <Button
+        android:id="@+id/button"
+        style="@style/Widget.AppCompat.Button.Small"
+        android:layout_width="126dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="122dp"
+        android:layout_marginEnd="50dp"
+        android:background="#5C6DCC"
+        android:backgroundTint="#2A346A"
+        android:text="Connecter"
+        android:textColorHighlight="#11194A"
+        android:textColorLink="#040923"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/MotDePasse" />
+
+    <Button
+        android:id="@+id/creation"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="58dp"
+        android:layout_marginTop="93dp"
+        android:layout_marginEnd="51dp"
+        android:layout_marginBottom="188dp"
+        android:background="#191818"
+        android:text="creer un compte"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
+
+    <Button
+        android:id="@+id/forget"
+        style="@style/Widget.Material3.Button.IconButton.Outlined"
+        android:layout_width="294dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="38dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="18dp"
+        android:text="Mot de passe oublié ?"
+        android:textColor="#FAF4F4"
+        app:layout_constraintBottom_toTopOf="@+id/creation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

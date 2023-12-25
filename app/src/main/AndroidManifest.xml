@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/img"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.PasswordMAnagerProject"
+        tools:targetApi="31">
+
+        <!-- Launcher Activity -->
+        <activity
+            android:name=".PasswordInterface"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Other Activities -->
+        <activity
+            android:name=".ModificationPassWord"
+            android:exported="false" />
+        <activity
+            android:name=".Reset"
+            android:exported="false" />
+        <!-- ... other activities ... -->
+
+        <!-- Parse meta-data -->
+        <meta-data
+            android:name="com.parse.SERVER_URL"
+            android:value="https://parseapi.back4app.com" />
+        <meta-data
+            android:name="com.parse.APPLICATION_ID"
+            android:value="IUTjdP5WkZDI9r6h2eV2gqaivFl1pG56n7rWrh1o" />
+        <meta-data
+            android:name="com.parse.CLIENT_KEY"
+            android:value="sz6CZAQT4x2Fwe5cDQUnU1A7p5l2Hv4cWNGzkCnW" />
+
+        <!-- Other Activities -->
+        <activity
+            android:name=".creationCompte"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>
